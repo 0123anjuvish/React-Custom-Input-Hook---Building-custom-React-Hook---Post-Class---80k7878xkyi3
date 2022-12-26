@@ -4,8 +4,9 @@ import useInput from "./useInput";
 import SignInForm from "./SignInForm";
 const App = () => {
   //complete the useInput hook
-  const email = useInput("");
-  const password = useInput("");
+ 
+  const [email ,bindEmail,resetEmail]= useInput("");
+  const [password, bindPassword,resetPassword] = useInput("");
 
   return (
     <div id="main">
